@@ -722,6 +722,31 @@ footer{
   .projects-grid{grid-template-columns:1fr;}
   .container{padding:0 22px;}
   .cv-download{flex-direction:column;align-items:flex-start;}
+
+  /* -- FULL STACK / DEVELOPER: perbesar & rapatkan spasi di mobile -- */
+  .hero-role-line{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:8px 10px;
+  }
+  .hero-role-line .hero-role-flip:nth-child(2){
+    margin-left:0;
+  }
+  .hero-role-outline,
+  .hero-role-solid{
+    font-size:26px;
+    letter-spacing:.02em;
+  }
+
+  /* -- sembunyikan background foto orang (image-sequence) di mobile -- */
+  .video-bg-wrap{
+    display:none;
+  }
+  .video-bg-overlay{
+    background:var(--bg);
+  }
 }
 @media (prefers-reduced-motion:reduce){
   *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important;}
